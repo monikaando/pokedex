@@ -13,10 +13,14 @@ export default {
     props: {
         details: {
             type: Object,
-            default: ()=>{
-              return {name:"", type:"", color: ""}
-            }        
+            default: () => {
+                return {
+                    name: "",
+                    type: "",
+                    color: ""
+                }
             }
+        }
 
     },
     data() {

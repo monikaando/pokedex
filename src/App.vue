@@ -1,8 +1,6 @@
 <template>
 <div id="app">
     <Pokemon :details="charmander" />
-
-
 </div>
 </template>
 
@@ -16,11 +14,11 @@ export default {
     },
     data() {
         return {
-          charmander: {
-            name: "charmander",
-            type: "fire",
-            color: "orange",
-          }
+            charmander: {
+                name: "charmander",
+                type: "fire",
+                color: "orange",
+            }
         };
     },
 };
