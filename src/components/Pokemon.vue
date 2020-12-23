@@ -3,7 +3,6 @@
     <h2>Name: {{ details.name }}</h2>
     <p>type: {{details.type }}</p>
     <p>color: {{details.color}}</p>
-
 </div>
 </template>
 
@@ -20,8 +19,8 @@ export default {
                     color: ""
                 }
             }
-        }
-
+        },
+        // pokeons:
     },
     data() {
         return {

@@ -1,6 +1,7 @@
 <template>
 <div id="app">
     <Pokemon :details="charmander" />
+    <Pokemon :details="bulbosaur" />
 </div>
 </template>
 
@@ -18,6 +19,11 @@ export default {
                 name: "charmander",
                 type: "fire",
                 color: "orange",
+            },
+             bulbosaur: {
+                name: "bulbosaur",
+                type: "gras",
+                color: "blue",
             }
         };
     },
