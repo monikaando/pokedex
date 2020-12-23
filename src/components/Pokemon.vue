@@ -1,26 +1,28 @@
 <template>
-<div id="pokemon">
-    <h2>Name: {{ details.name }}</h2>
-    <p>type: {{details.type }}</p>
-    <p>color: {{details.color}}</p>
+<div id="Pokemon">
+    <div v-for="pokemon in pokemons" :key="pokemon.index">
+        <h2>Name: {{ pokemon.name }}</h2>
+        <p>type: {{pokemon.type }}</p>
+        <p>color: {{pokemon.color}}</p>
+    </div>
 </div>
 </template>
 
 <script>
 export default {
-    name: "pokemon",
+    name: "Pokemon",
     props: {
-        details: {
-            type: Object,
+        pokemons: {
+            type: Array,
             default: () => {
-                return {
+                return [{
                     name: "",
                     type: "",
                     color: ""
-                }
+                }];
             }
         },
-        // pokeons:
+    
     },
     data() {
         return {
@@ -29,3 +31,19 @@ export default {
     },
 };
 </script>
+
+
+
+    // props: {
+    //     details: {
+    //         type: Object,
+    //         default: () => {
+    //             return {
+    //                 name: "",
+    //                 type: "",
+    //                 color: ""
+    //             }
+    //         }
+    //     },
+    
+    // },

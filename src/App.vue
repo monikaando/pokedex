@@ -1,7 +1,6 @@
 <template>
 <div id="app">
-    <Pokemon :details="charmander" />
-    <Pokemon :details="bulbosaur" />
+    <Pokemon :pokemons="starters" />
 </div>
 </template>
 
@@ -15,17 +14,23 @@ export default {
     },
     data() {
         return {
-            charmander: {
-                name: "charmander",
-                type: "fire",
-                color: "orange",
-            },
-             bulbosaur: {
-                name: "bulbosaur",
-                type: "gras",
-                color: "blue",
-            }
+            // charmander: {
+            //     name: "charmander",
+            //     type: "fire",
+            //     color: "orange",
+            // },
+            //  bulbosaur: {
+            //     name: "bulbosaur",
+            //     type: "gras",
+            //     color: "blue",
+            // }
+            starters: [
+              {name: "charmander", type: "fire", color: "orange"},
+              {name: "squirtle", type: "water", color: "orange"},
+              {name: "bulbasaur", type: "grass", color: "orange"},
+            ]
         };
     },
 };
 </script>
+    // <Pokemon :details="charmander" />
